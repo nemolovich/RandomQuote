@@ -10,12 +10,12 @@ function randomQuote(quotes,
 	
 	this.quotesInterval = null;
 
-	console.log('Config:',
-				'\n	quotes:', quotes,
-				'\n	containerClass:', containerClass,
-				'\n	textBlockClass:', textBlockClass,
-				'\n	fadeInTimeout:', fadeInTimeout,
-				'\n	fadeOutTimeout:', fadeOutTimeout);
+	// console.log('Config:',
+				// '\n	quotes:', quotes,
+				// '\n	containerClass:', containerClass,
+				// '\n	textBlockClass:', textBlockClass,
+				// '\n	fadeInTimeout:', fadeInTimeout,
+				// '\n	fadeOutTimeout:', fadeOutTimeout);
 
 	function fadeIn(element, time) {
 		time = time || fadeInTimeout;
@@ -35,7 +35,7 @@ function randomQuote(quotes,
 			this.quotesInterval = null;
 		}
 		changeQuote(interval);
-		console.log('	Interval:',interval);
+		// console.log('	Interval:',interval);
 		this.quotesInterval = setInterval(function() {changeQuote(interval);}, interval + fadeInTimeout + fadeOutTimeout);
 	}
 	
